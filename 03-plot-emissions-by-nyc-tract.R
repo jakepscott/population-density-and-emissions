@@ -38,6 +38,8 @@ source(here("helper-scripts/load-nyc-tract-data.R"))
          plot.caption = element_text(size = rel(.8),
                                      face = "italic",
                                      color = "grey70"),
+         strip.background = element_blank(),
+         strip.text = element_text(face = "bold"),
          axis.title = element_markdown()))
 
 ggsave(here("figures/03-emissions-by-tract-nyc-faceted.png"),

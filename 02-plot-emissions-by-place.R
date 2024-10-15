@@ -46,7 +46,8 @@ place_emissions <- place_emissions_raw %>%
          place = str_replace(place, pattern = "Pennsylvania", replacement =  "PA"),
          place = str_replace(place, pattern = "Illinois", replacement =  "IL"),
          place = str_replace(place, pattern = "Washington", replacement =  "WA"),
-         place = str_replace(place, pattern = "New York", replacement =  "NY"))
+         place = str_replace(place, pattern = "New York", replacement =  "NY"),
+         place = str_replace(place, pattern = "Michigan", replacement =  "MI"))
 
 # Plot top places --------------------------------------------------------------
 (plot <- place_emissions %>% 

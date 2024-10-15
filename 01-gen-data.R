@@ -9,11 +9,9 @@ library(sf)
 library(ggiraph)
 library(ggrepel)
 
-# NOTEL: I ran this, but it takes a while. To spare you the time, I save it
-# as a CSV and import it (I could've parallelized this with furrr I imagine,
-# but that would require me brushing off the dust- juice not worth squeeze)
+
 # Load data ---------------------------------------------------------------
-#Emissions
+#Emissions (See data dictionary for source)
 emissions <- raster(here("data/raw/onroad_2017.tif"))
 
 # Place boundaries
